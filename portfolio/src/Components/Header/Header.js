@@ -1,9 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
+import './Header.css'
+import Mobile from './Mobile/Mobile'
+import Web from './Web/Web'
 
 function Header(){
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
-        <div>
-            This is Header
+        <div className="header">
+            <div className="logo">Overreacted</div>
+            <div className="menu">
+                <div className="web-menu"><Web/></div>
+                <div className="mobile-menu">
+                    <div onClick={() => setIsOpen(!isOpen)}>
+                        <i class="fi fi-rr-apps-delete menu-icon"></i>
+                    </div>
+                    {isOpen && <Mobile isOpen={isOpen} setIsOpen={setIsOpen}/>}
+                </div>
+            </div>
         </div>
     )
 }

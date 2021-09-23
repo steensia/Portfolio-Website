@@ -1,0 +1,47 @@
+.header{
+    display: flex;
+    justify-content: space-between; /*Stretches components inside the div to extreme ends*/
+    flex: 1; /*Stretch all space that is available*/
+    padding: 12px;
+    position: relative;
+    align-items: center; /*Vertically aligns to center*/
+}
+
+.menu{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.menu-icon{
+    font-size: 24px; /*Standard size for visibility*/
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.web-menu{
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    font-size: 36px;
+    color: blueviolet;
+    font-weight: 800;
+}
+
+@media only screen and (max-width: 720px){
+    .mobile-menu{
+        display: flex;
+    }
+
+    .web-menu{
+        display: none;
+    }
+
+    .logo{
+        font-size: 24px;
+    }
+}
