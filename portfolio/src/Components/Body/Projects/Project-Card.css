@@ -75,6 +75,10 @@
         margin-left: 0px;
         margin-top: 12px;
     }
+
+    .project-tags{
+        max-width: 100%;
+    }
 }
 
 
