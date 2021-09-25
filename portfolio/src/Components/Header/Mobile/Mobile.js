@@ -4,22 +4,27 @@ import './Mobile.css'
 function Mobile({isOpen, setIsOpen}) {
     return <div className="mobile">
         <div className="close-icon" onClick={() => setIsOpen(!isOpen)}>
-            <i class="fi fi-rr-cross-circle"></i>
+            <i class="far fa-times-circle"></i>
         </div>
         <div className="mobile-options">
             <div className="mobile-option">
-                <a href="#project">
-                    <i class="fi fi-rr-brush option-icon"></i>Projects
+                <a href="#projects">
+                    <i class="far fa-tasks option-icon"></i>Projects
                 </a>
             </div>
             <div className="mobile-option">
-                <a href="#skills">
-                    <i class="fi fi-rr-laptop option-icon"></i>Skills
-                </a>
+            <a href="#skills">
+                <i class="far fa-laptop option-icon"></i>Skills
+            </a>
             </div>
             <div className="mobile-option">
                 <a href="#work">
-                    <i class="fi fi-rr-briefcase"></i>Work
+                    <i class="far fa-briefcase option-icon"></i>Work
+                </a>
+            </div>
+            <div className="mobile-option">
+                <a href="#contact">
+                    <i class="far fa-user option-icon"></i>Contact
                 </a>
             </div>
         </div>

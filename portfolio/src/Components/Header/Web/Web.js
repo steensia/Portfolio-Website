@@ -5,22 +5,22 @@ function Web() {
     return <div className="web">
         <div className="web-option">
             <a href="#projects">
-                <i class="fi fi-rr-brush option-icon"></i>Projects
+                <i class="far fa-tasks option-icon"></i>Projects
             </a>
         </div>
         <div className="web-option">
             <a href="#skills">
-                <i class="fi fi-rr-laptop option-icon"></i>Skills
+                <i class="far fa-laptop option-icon"></i>Skills
             </a>
         </div>
         <div className="web-option">
             <a href="#work">
-                <i class="fi fi-rr-brush option-icon"></i>Work
+                <i class="far fa-briefcase option-icon"></i>Work
             </a>
         </div>
         <div className="web-option">
             <a href="#contact">
-                <i class="fi fi-rr-laptop option-icon"></i>Contact
+                <i class="far fa-user option-icon"></i>Contact
             </a>
         </div>
     </div>
